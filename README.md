@@ -1,14 +1,10 @@
-# global config for spring boot project.
+# spring boot 插件集合
 
-* `mvn clean`
+### 安装到本地
 
-* `mvn clean compile`
-* `mvn clean package`
-* `mvn clean javadoc:jar`
+* 1. 下载：`$ git clone https://github.com/tomoncle/spring-boot-config-assemble spring-boot-config`
+* 2. 执行：`$ mvn clean install`
 
-* `mvn clean install`
-* `mvn clean source:jar install`
 
-* `mvn clean deploy source`
-* `mvn clean deploy`
+### [使用配置>>](https://github.com/tomoncle/m2)
 
