@@ -1,0 +1,23 @@
+{
+  "groups": [
+    {
+      "name": "spring.boot.config.zuul.storage",
+      "type": "com.tomoncle.config.springboot.zuul.EnableZuulConfiguration",
+      "sourceType": "com.tomoncle.config.springboot.zuul.EnableZuulConfiguration"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.boot.config.zuul.storage.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.tomoncle.config.springboot.zuul.EnableZuulConfiguration",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.boot.config.zuul.storage.type",
+      "type": "java.lang.String",
+      "sourceType": "com.tomoncle.config.springboot.zuul.EnableZuulConfiguration"
+    }
+  ],
+  "hints": []
+}
