@@ -25,7 +25,6 @@ import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
@@ -154,7 +153,7 @@ public final class OkHttpRequest {
      * @return string
      */
     private static FormBody formBody(Map<String, Object> map) {
-        FormBody.Builder builder = new FormBody.Builder(Charset.forName("UTF-8"));
+        FormBody.Builder builder = new FormBody.Builder();
         for (String name : map.keySet()) {
             builder.add(name, map.get(name).toString());
         }
