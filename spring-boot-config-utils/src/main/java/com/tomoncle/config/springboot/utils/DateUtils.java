@@ -96,11 +96,9 @@ public final class DateUtils {
         return Date.from(shanghaiZonedNowDateTimeMinusSeconds(seconds).toInstant());
     }
 
-
-    public static Date nowMinusMinutes(int seconds) {
-        return Date.from(shanghaiZonedNowDateTimeMinusSeconds(seconds).toInstant());
+    public static Date nowMinusMinutes(int minute) {
+        return Date.from(shanghaiZonedNowDateTime().minusMinutes(minute).toInstant());
     }
-
 
     public static Date nowMinusHours(int hours) {
         return Date.from(shanghaiZonedNowDateTime().minusHours(hours).toInstant());
